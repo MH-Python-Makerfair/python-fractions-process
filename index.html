@@ -42,13 +42,16 @@
 
 .dropbtn:hover {
   cursor: pointer;
+}
+
+.dropbtn:after {
   animation: menurotate;
   animation-duration: 0.3s;
   /* users on chrome need the webkit prefix: */
   -webkit-animation-fill-mode: forwards;
   animation-iteration-count: linear;
   /* users other then chrome: */
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;    
 }
 
 @keyframes menurotate {
