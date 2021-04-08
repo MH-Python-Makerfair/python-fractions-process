@@ -134,7 +134,31 @@ numtwo = int(input(<span class="hljs-string" style="color: rgb(230, 219, 116);">
 
 dentwo = int(input(<span class="hljs-string" style="color: rgb(230, 219, 116);">"and finally, enter the second fraction's denominator:"</span>))
 print(<span class="hljs-string" style="color: rgb(230, 219, 116);">"Thank you!"</span>)</pre><br>I just did the same thing over and over, but with different variables, and a must-have thank you message at the bottom (for the user experience). Oh yeah one more user experience thing:
-  <br><pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(35, 36, 31); color: rgb(248, 248, 242);">print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'THANK YOU FOR USING THIS CALCULATOR =)\n\n\n\n\n\n\n\n\n\n'</span>)</pre>That just says (x) with \n bc of </h2> 
+  <br><pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(35, 36, 31); color: rgb(248, 248, 242);">print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'THANK YOU FOR USING THIS CALCULATOR =)\n\n\n\n\n\n\n\n\n\n'</span>)</pre>That just says thanks for using this calculator, with \n's at the end because that causes a bunch of indents. Next up, we have to make sure that the user actually entered information. We can do that with the true property. Let me explain. So python has these things called properties. It is like a setting, or a switch. if you set something to the property "True" it will happen, but if it is "False" then it will have the opposite outcome or won't happen. So to check that the user entered information, we can ask if the user entered the right information by asking if it is true. Here is the code:<br><pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(35, 36, 31); color: rgb(248, 248, 242);"><span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> num1:
+    print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'calculating den1'</span>)
+
+
+
+
+<span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> den1:
+    print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'calculating num2'</span>)
+
+<span class="hljs-comment" style="color: rgb(117, 113, 94);">#SEC == 2</span>
+
+<span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> num2:
+    print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'calculating den2'</span>)
+
+
+
+<span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> den2:
+    print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'COMPARING...'</span>)</pre>So for the first if statement we ask python if num1 (the first numerator) is True. And because True is the default value, we can just ask if num1 (exists). So we end up with "if num1: print('calculating den1')." I know it says den1 instead of num1, but that just means it is moving on to the next number. So if the user had not entered any information for the numerator, then it would results in an error (or prints nothing). We repeat this process with all of the variables or numbers to make sure they are all valid. Now the next part. The Math. I have created a small graph to help you andmyself understand the math formula:<br><div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEbGqp74Uc&#x2F;view?embed">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEbGqp74Uc&#x2F;view?utm_content=DAEbGqp74Uc&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">5&#x2F;6</a></h2> 
   <br><br><br><br><br><br><h1></h1>
 </body>
 </html>
