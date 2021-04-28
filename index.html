@@ -153,11 +153,45 @@ print(<span class="hljs-string" style="color: rgb(230, 219, 116);">"Thank you!"<
 
 
 <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> den2:
-    print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'COMPARING...'</span>)</pre>So for the first if statement we ask python if num1 (the first numerator) is True. And because True is the default value, we can just ask if num1 (exists). So we end up with "if num1: print('calculating den1')." I know it says den1 instead of num1, but that just means it is moving on to the next number. So if the user had not entered any information for the numerator, then it would results in an error (or prints nothing). We repeat this process with all of the variables or numbers to make sure they are all valid. Now the next part. The Math. I have created a small graph to help you andmyself understand the math formula:<br><div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
- padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
+    print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'COMPARING...'</span>)</pre>So for the first if statement we ask python if num1 (the first numerator) is True. And because True is the default value, we can just ask if num1 (exists). So we end up with "if num1: print('calculating den1')." I know it says den1 instead of num1, but that just means it is moving on to the next number. So if the user had not entered any information for the numerator, then it would results in an error (or prints nothing). We repeat this process with all of the variables or numbers to make sure they are all valid. Now the next part. The Math. Python uses math a lot, so it was easy to implement this concept into the code. Here is how it works:<div id="fraction example"><br>1   3<br>—   —<br>2   4</div><br>
+  Let's use the example of 1/2 compared to 3/4. To easily compare them together, we can simply multiply. You would multiply the first denominator by the second numerator, then multiply the second denominator by the first numerator. Similar to cross-multiplying. With our example fractions, we would multiply 3 * 2, which is five, then 4 * 1, which is four. The second fraction, 3/4, is greater than 1/2 because 5 > 4. And since we have variables stored for the numirators and denominators, we can just multiply them accordingly:<br>
   
-</div> 
+  <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(35, 36, 31); color: rgb(248, 248, 242);">secondFracNumber = den1*num2
+
+firstFracNumber = den2*num1</pre>
+  
+</div> <br>
+  The calculating part is the den1*num2, and den2*num1. We multiply the variables we have stored previously here. We still need to create a way to compare the answers, like 8 > 5 or 3 < 4. Why not more variables?<br>
+  We store the answers in variables, called firstFracNumber and secondFracNumber, by saying firstFracNumber = den2*num1.<br>
+  firstFracNumber just means first fraction number, and secondFracNumber means second fraction number.<br>
+  Anyways, How can we compare these? If loops!<br>
+  An if loop is kind of like a scenario. It basically says "if this happens/is detected, this will happen accordingly:." Like a chain reaction. Here are the if loops we will be using to compare the fractions:<br><pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(35, 36, 31); color: rgb(248, 248, 242);"><span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> firstFracNumber &gt; secondFracNumber:
+        print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The first fraction is greater then the second fraction! {num1}/{den1} &gt; {num2}/{den2}\n'</span>)
+
+
+    
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> firstFracNumber &lt; secondFracNumber:
+        print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The second fraction is greater then the first fraction! {num1}/{den1} &lt; {num2}/{den2}\n'</span>)
+        
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> secondFracNumber == firstFracNumber:
+	    print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The fractions are equivalent! {num1}/{den1} = {num2}/{den2}\n\n\t\t\t'</span>)
+    
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> num2 &lt; den2:
+        <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> firstFracNumber &gt; secondFracNumber:
+            print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The first fraction is greater then the second fraction! {num1}/{den1} &gt; {num2}/{den2}\n'</span>)
+        
+        
+        
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> firstFracNumber &lt; secondFracNumber:
+        print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The second fraction is greater then the first fraction! {num1}/{den1} &lt; {num2}/{den2}\n'</span>)
+        
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> secondFracNumber == firstFracNumber:
+	    print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The fractions are equivalent! {num1}/{den1} = {num2}/{den2}\n\n\t\t\t'</span>)</pre><br>
+  We have a bunch of if loops, like "if [variable1] > [variable2]: print(f"{variableA} is greater than {variableB}")"<br>
+  We say "if this number is less/greater/equal to this number: display 'this number was greater than this number'"<br><br><br>
+  A basic summary of all the code:<br>
+  We take numerators and denominators, test them, compare them, and tell the user the comparison.<br><br><br>
+  That wraps up the process of writing this code, and everything I had trouble with!
   <br><br><br><br><br><br><h1></h1>
 </body>
 </html>
